@@ -1,6 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--BASIC COLORS-->
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+<color name="yellow">#FFF500</color>
+<color name="dark_yellow">#FBF315</color>
+<color name="selected_yellow">#E6DD00</color>
+<color name="yellow_light">#FFFF99</color>
+<color name="black">#000000</color>
+<color name="black_gray">#111111</color>
+<color name="dark_gray">#666666</color>
+<color name="dark_gray_02">#979797</color>
+<color name="light_gray">#D3D1D4</color>
+<color name="light_gray_00">#f1f1f1</color>
+<color name="light_gray_01">#F4F4F4</color>
+<color name="light_gray_02">#DEDEDE</color>
+<color name="light_gray_03">#DADADA</color>
+<color name="light_gray_04">#EEEEEE</color>
+<color name="gray_shadow">#999999</color>
+<color name="disabled_color">#CCCCCC</color>
+<color name="invalid_text">#cccccc</color>
+
+<color name="black_45">#73000000</color>
+<color name="dark_grey_75">#66666666</color>
+
+    <!--COLORS FOR MESSAGES-->
+<color name="red">#FF0000</color>
+<color name="light_red">#EEBDB6</color>
+<color name="alpha_gray">#dcf5f5f5</color>
+<color name="light_blue">#B7CEE1</color>
+<color name="green">#00963E</color>
+<color name="light_green">#4DAA34</color>
+<color name="orange_dark">#ffff8800</color>
+
+<color name="white">#ffffff</color>
+<color name="ultra_dark">#29303F</color>
+<color name="dark">#696E79</color>
+<color name="ultra_dark_overlay">#0D29303F</color>
+<color name="card_view_container_gray_background">#dddddd</color>
+<color name="card_view_light_gray_background">#EEEEEE</color>
+<color name="secondary_button_background_color">#66DEDEDE</color>
+
+<color name="gray_light_01">#C8C4C1</color>
+<color name="gray_light_02">#CCCCCC</color>
+<color name="gray_light_03">#D3D1D4</color>
+<color name="gray_light_04">#DADADA</color>
+<color name="gray_light_05">#DDDDDD</color>
+<color name="gray_light_06">#DEDEDE</color>
+<color name="gray_light_07">#e4e4e4</color>
+<color name="gray_light_08">#eaeaea</color>
+<color name="gray_light_09">#F7F7F7</color>
+<color name="gray_light_10">#f6f6f6</color>
+<color name="gray_light_11">#F9F9F9</color>
 </resources>
