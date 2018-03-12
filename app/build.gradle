@@ -1,5 +1,9 @@
 apply plugin: 'com.android.application'
 
+def keystorePropertiesFile = rootProject.file("key.properties")
+def keystoreProperties = new Properties()
+keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+
 android {
     compileSdkVersion 27
     defaultConfig {
@@ -8,15 +12,34 @@ android {
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
+        setProperty("archivesBaseName", applicationId + "-v" + versionCode + "(" + versionName + ")")
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
-    buildTypes {
+    signingConfigs {
         release {
+            keyAlias keystoreProperties['keyAlias']
+            keyPassword keystoreProperties['keyPassword']
+            storeFile file(keystoreProperties['storeFile'])
+            storePassword keystoreProperties['storePassword']
+        }
+    }
+    buildTypes {
+        debug {
+            versionNameSuffix "-T"
             minifyEnabled false
+
+        }
+        release {
+            minifyEnabled true
+            versionNameSuffix "-R"
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
 }
+
+
+
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
@@ -24,6 +47,7 @@ dependencies {
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
     implementation 'com.android.support:recyclerview-v7:27.0.1'
     implementation "com.android.support:cardview-v7:27.0.1"
+    implementation 'com.android.support:design:27.0.1'
 
     // Butter Knife
     implementation 'com.jakewharton:butterknife:8.5.1'

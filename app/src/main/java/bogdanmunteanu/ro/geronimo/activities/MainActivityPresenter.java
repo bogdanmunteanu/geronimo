@@ -35,21 +35,12 @@ public class MainActivityPresenter implements MainActivityContract.Presenter {
        ArrayList<Item> items =  new ArrayList<>();
        for(int i = 0;i<5;i++)
        {
-           items.add(new Item("Beautiful image",getRandomPictureUrl(),getRandomPictureUrl()));
+           items.add(new Item("Beautiful image"));
            Log.d(this.getClass().getSimpleName(),items.get(i).toString());
        }
        return items;
     }
 
-    public static String  getRandomPictureUrl()
-    {
-        String url = "http://picsum.photos/500/300/?image=";
-        Random randomGenerator = new Random();
-        int randomNumber = randomGenerator.nextInt(1000);
-        StringBuilder builder = new StringBuilder();
-        builder.append(url);
-        builder.append(randomNumber);
-        return builder.toString();
-    }
+
 
 }
