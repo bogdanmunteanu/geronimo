@@ -23,6 +23,11 @@ import bogdanmunteanu.ro.geronimo.helpers.NetworkHelper;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
+
+/**
+ * Main activity implementation
+ * Created by Bogdan Munteanu
+ */
 public class MainActivity extends AppCompatActivity implements MainActivityContract.View {
 
     public static int CONNECTION_REQUEST = 99;

@@ -5,7 +5,8 @@ import java.util.ArrayList;
 import bogdanmunteanu.ro.geronimo.model.Item;
 
 /**
- * Created by Bogdan on 3/12/2018.
+ * Main activity contract - link between view and presenter
+ * Created by Bogdan Munteanu
  */
 
 public interface MainActivityContract {

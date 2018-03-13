@@ -3,7 +3,9 @@ package bogdanmunteanu.ro.geronimo.model;
 import java.util.Random;
 
 /**
- * Created by Bogdan on 3/12/2018.
+ * Created by Bogdan Munteanu
+ * Model class that holds information presented in the UI
+ * Contains method that generates a random generator for pictureUrl;
  */
 
 public class Item {

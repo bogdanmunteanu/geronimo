@@ -8,7 +8,9 @@ import java.util.Random;
 import bogdanmunteanu.ro.geronimo.model.Item;
 
 /**
- * Created by Bogdan on 3/12/2018.
+ * Created by Bogdan Munteanu
+ * Main activity presenter (class which is responsible doing all the work in Main Activity)
+ *
  */
 
 public class MainActivityPresenter implements MainActivityContract.Presenter {

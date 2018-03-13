@@ -21,7 +21,9 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
- * Created by Bogdan on 3/12/2018.
+ * Created by Bogdan Munteanu
+ * Adapter that controls data and child views in recyclerview
+ * Includes a static class that holds data references for child views
  */
 
 public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.AdapterHolder>{
